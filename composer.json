@@ -1,0 +1,40 @@
+{
+    "name": "moorl/moorl-cms-twig",
+    "description": "PreiseWeg - Entfernt die Preise von jeder Seite",
+    "version": "1.6.0",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "moori"
+        }
+    ],
+    "require": {
+        "shopware/core": "6.6.*"
+    },
+    "type": "shopware-platform-plugin",
+    "autoload": {
+        "psr-4": {
+            "PreiseWeg\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "PreiseWeg\\PreiseWeg",
+        "copyright": "(c) by zerotoast",
+        "label": {
+            "de-DE": "PreiseWeg - Entfernt die Preise von jeder Seite",
+            "en-GB": "PreiseWeg - Entfernt die Preise von jeder Seite"
+        },
+        "description": {
+            "de-DE": "PreiseWeg - Entfernt die Preise von jeder Seite",
+            "en-GB": "PreiseWeg - Entfernt die Preise von jeder Seite"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://projects.zerotoast.space/",
+            "en-GB": "https://projects.zerotoast.space/"
+        },
+        "supportLink": {
+            "de-DE": "https://zerotoast.space/contact",
+            "en-GB": "https://zerotoast.space/contact"
+        }
+    }
+}
