@@ -1,5 +1,9 @@
 {% sw_extends '@Storefront/storefront/component/buy-widget/buy-widget.html.twig' %}
 
 {% block buy_widget_price %}
-    <h2>Hello world!</h2>
+    {% if context.customer %}
+        <h2>You are logged in!</h2>
+    {% else %}
+        <h2>You are not logged in!</h2>
+    {% endif %}
 {% endblock %}
