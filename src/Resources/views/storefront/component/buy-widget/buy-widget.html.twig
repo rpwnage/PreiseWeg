@@ -1,9 +1,11 @@
 {% sw_extends '@Storefront/storefront/component/buy-widget/buy-widget.html.twig' %}
 
 {% block buy_widget_price %}
-    {% if context.customer %}
-        <h2>You are logged in!</h2>
-    {% else %}
-        <h2>You are not logged in!</h2>
+    {% if config('PreiseWeg.config.showWhenLoggedIn') == true %}
+        {% if context.customer %}
+            <h2>You are logged in! {{ config('PreiseWeg.config.showWhenLoggedIn') }}</h2>
+        {% else %}
+            <h2>You are not logged in!{{ config('PreiseWeg.config.showWhenLoggedIn') }}</h2>
+        {% endif %}
     {% endif %}
 {% endblock %}
