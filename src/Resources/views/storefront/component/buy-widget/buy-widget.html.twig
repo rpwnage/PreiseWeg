@@ -41,3 +41,11 @@
         {% endif %}
     {% endautoescape %}
 {% endblock %}
+
+{% block buy_widget_wishlist %}
+    {% if config('PreiseWeg.config.showWhenLoggedIn') == true %}
+        {% if context.customer %}
+            {{ parent() }}
+        {% endif %}
+    {% endif %}
+{% endblock %}

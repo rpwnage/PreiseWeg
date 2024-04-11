@@ -1,0 +1,9 @@
+{% sw_extends '@Storefront/storefront/page/buy-widget/buy-widget-form.html.twig' %}
+
+{% block buy_widget_buy_container %}
+    {% if config('PreiseWeg.config.showWhenLoggedIn') == true %}
+        {% if context.customer %}
+            {{ parent() }}
+        {% endif %}
+    {% endif %}
+{% endblock %}
