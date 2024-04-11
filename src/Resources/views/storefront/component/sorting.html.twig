@@ -8,13 +8,15 @@
         <select class="sorting form-select" aria-label="{{ 'general.sortingLabel'|trans|striptags }}">
             {% for sorting in sortings %}
                 {% set key = sorting.key %}
+                {% if "preis" in sorting.translated.label|raw|lower or "price" in sorting.translated.label|raw|lower %}
                     {% if config('PreiseWeg.config.showWhenLoggedIn') == true %}
                         {% if context.customer %}
-                            {% if "preis" in sorting.translated.label|raw|lower or "price" in sorting.translated.label|raw|lower }
-                                <option value="{{ key }}"{% if key == current %} selected{% endif %}>{{ sorting.translated.label|sw_sanitize }}</option>
-                            {% endif %}
+                            <option value="{{ key }}"{% if key == current %} selected{% endif %}>{{ sorting.translated.label|sw_sanitize }}</option>
                         {% endif %}
                     {% endif %}
+                {% else %}
+                    <option value="{{ key }}"{% if key == current %} selected{% endif %}>{{ sorting.translated.label|sw_sanitize }}</option>
+                {% endif %}
             {% endfor %}
         </select>
     </div>

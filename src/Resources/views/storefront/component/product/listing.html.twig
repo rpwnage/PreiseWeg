@@ -1,10 +1,8 @@
+{% sw_extends '@Storefront/storefront/component/product/listing.html.twig' %}
+
 {% block element_product_listing_sorting %}
-    {% if config('PreiseWeg.config.showWhenLoggedIn') == true %}
-        {% if context.customer %}
-            {% sw_include '@Storefront/storefront/component/sorting.html.twig' with {
-                current: searchResult.sorting,
-                sortings: searchResult.availableSortings
-            } %}
-        {% endif %}
-    {% endif %}
+{% sw_include '@Storefront/storefront/component/sorting.html.twig' with {
+                                        current: searchResult.sorting,
+                                        sortings: searchResult.availableSortings
+                                    } %}
 {% endblock %}
