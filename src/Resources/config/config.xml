@@ -10,11 +10,10 @@
         </input-field>
         <input-field type="text-editor">
             <name>htmlShownWhenNotLoggedIn</name>
-            <label>HTML Das beim Nutzer auf der Produkt Detail Seite angezeigt wird, wenn er nicht
-                angemeldet ist, und "Preise anzeigen, wenn der Nutzer angemeldet ist" aktiviert ist.</label>
-            <defaultValue>
-                <h1>false</h1>
-            </defaultValue>
+            <placeholder>HTML Das beim Nutzer auf der Produkt Detail Seite angezeigt wird, wenn er
+                nicht
+                angemeldet ist, und "Preise anzeigen, wenn der Nutzer angemeldet ist" aktiviert ist.
+            </placeholder>
         </input-field>
     </card>
 </config>
