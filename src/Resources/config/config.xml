@@ -6,7 +6,14 @@
         <input-field type="checkbox">
             <name>showWhenLoggedIn</name>
             <label>Preise anzeigen, wenn der Nutzer angemeldet ist</label>
-            <defaultValue>false</defaultValue>
+            <defaultValue>true</defaultValue>
+        </input-field>
+        <input-field type="text-editor">
+            <name>htmlShownWhenNotLoggedIn</name>
+            <label>HTML Das beim Nutzer angezeigt wird, wenn er nicht angemeldet ist.</label>
+            <defaultValue>
+                <h1>false</h1>
+            </defaultValue>
         </input-field>
     </card>
 </config>
