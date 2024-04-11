@@ -1,0 +1,22 @@
+{% sw_extends '@Storefront/storefront/component/listing/filter-panel.html.twig' %}
+
+{% block component_filter_panel_item_price %}
+    {% if config('PreiseWeg.config.showWhenLoggedIn') == true %}
+        {% if context.customer %}
+            {% set price = listing.aggregations.get('price') %}
+
+            {% if price.min !== null and price.max !== null %}
+                {% sw_include '@Storefront/storefront/component/listing/filter/filter-range.html.twig' with {
+                    sidebar: sidebar,
+                    name: 'price',
+                    minKey: 'min-price',
+                    maxKey: 'max-price',
+                    lowerBound: 0,
+                    displayName: 'listing.filterPriceDisplayName'|trans|sw_sanitize,
+                    minInputValue: 0,
+                    maxInputValue: price.max,
+                } %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endblock %}

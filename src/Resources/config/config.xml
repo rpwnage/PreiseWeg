@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
     <card>
-        <title>Minimal configuration</title>
+        <title>PreiseWeg - Shop Einstellungen</title>
         <input-field type="checkbox">
             <name>showWhenLoggedIn</name>
             <label>Preise anzeigen, wenn der Nutzer angemeldet ist</label>

@@ -1,11 +1,11 @@
 {
-    "name": "moorl/moorl-cms-twig",
+    "name": "zerotoast/preise-weg",
     "description": "PreiseWeg - Entfernt die Preise von jeder Seite",
     "version": "1.0.0",
     "license": "proprietary",
     "authors": [
         {
-            "name": "moori"
+            "name": "zerotoast"
         }
     ],
     "require": {
@@ -19,7 +19,7 @@
     },
     "extra": {
         "shopware-plugin-class": "PreiseWeg\\PreiseWeg",
-        "copyright": "(c) by zerotoast",
+        "copyright": "(c) by luca rizzello",
         "label": {
             "de-DE": "PreiseWeg - Entfernt die Preise von jeder Seite",
             "en-GB": "PreiseWeg - Entfernt die Preise von jeder Seite"
