@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/storefront/layout/header/header.html.twig' %}
+
+{% block layout_header_actions_cart %}
+    {% if context.customer %}
+        {{ parent() }}
+    {% else %}
+        {% if config('PreiseWeg.config.showShoppingcart') == true %}
+            {{ parent() }}
+        {% endif %}
+    {% endif %}
+{% endblock %}
