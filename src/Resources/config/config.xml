@@ -13,6 +13,9 @@
             <label>Warenkorb anzeigen, wenn der Nutzer nicht angemeldet ist</label>
             <defaultValue>false</defaultValue>
         </input-field>
+    </card>
+    <card>
+        <title>PreiseWeg - Deutsche Darstellung</title>
         <input-field type="text-editor">
             <name>htmlShownWhenNotLoggedIn</name>
             <placeholder>HTML Das beim Nutzer auf der Produkt Detail Seite angezeigt wird, wenn er
